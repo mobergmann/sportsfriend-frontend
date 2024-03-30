@@ -1,19 +1,20 @@
 {
-  "name": "sportsfiend-frontend",
-  "version": "0.0.1",
-  "description": "A fronend for the sportsfriend app.",
-  "main": "index.js",
+  "name": "sportsfriend-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/mobergmann/sportsfiend-frontend.git"
+  "dependencies": {
+    "vue": "^3.4.21"
   },
-  "author": "mobergmann",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mobergmann/sportsfiend-frontend/issues"
-  },
-  "homepage": "https://github.com/mobergmann/sportsfiend-frontend#readme"
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
 }
